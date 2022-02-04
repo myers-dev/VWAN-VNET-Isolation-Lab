@@ -451,7 +451,7 @@ Isolation may be achieved by selectively making 'propagate' / 'associate' connec
 
 ```bash
 
-echo "Creating isolation"
+echo "Creating isolation:"
 
 ss_rtid=`az network vhub route-table show --name SHAREDSERVICES -g ${rg} --vhub-name ${vhub0_name} --query "id" -o tsv`
 blue_rtid=`az network vhub route-table show --name BLUE -g ${rg} --vhub-name ${vhub0_name} --query "id" -o tsv`
